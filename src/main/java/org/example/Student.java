@@ -5,7 +5,9 @@ import java.io.Serializable;
 public class Student implements Serializable {
     String name;
     int age;
-    transient double GPA;
+
+
+    transient double GPA; // Свойства класса, помеченные модификатором transient, не сериализуются.
 
     public Student() {
     }
